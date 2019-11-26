@@ -1,0 +1,92 @@
+---
+layout: default
+---
+
+<!-- Image to hack wechat -->
+<!-- <img src="/assets/img/qrcode/wechat-mp.jpg" width="0" height="0"> -->
+<!-- <img src="{{ page.banner | relateive_url }}" width="0" height="0"> -->
+
+<!-- Post Header -->
+{% include header.html layout='post' %}
+
+<!-- Post Content -->
+<article>
+    <div class="container">
+        <div class="row">
+
+            <!-- Post Container -->
+            <div class="
+                col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                post-container">
+
+                <!-- Multi-Lingual -->
+                {% if page.multilingual %}{% include lang.html %}{% endif %}
+
+				{{ content }}
+
+                <hr style="visibility: hidden;">
+                <ul class="pager">
+                    {% if page.previous.url %}
+                    <li class="previous">
+                        <a href="{{ page.previous.url | relative_url | replace: '//', '/' }}" data-toggle="tooltip" data-placement="top" title="{{page.previous.title}}">
+                        Previous<br>
+                        <span>{{page.previous.title}}</span>
+                        </a>
+                    </li>
+                    {% endif %}
+                    {% if page.next.url %}
+                    <li class="next">
+                        <a href="{{ page.next.url | relative_url | replace: '//', '/' }}" data-toggle="tooltip" data-placement="top" title="{{page.next.title}}">
+                        Next<br>
+                        <span>{{page.next.title}}</span>
+                        </a>
+                    </li>
+                    {% endif %}
+                </ul>
+                <hr style="visibility: hidden;">
+
+                {% if site.disqus.username %}
+                <!-- disqus comment start -->
+                <div class="comment"><div id="disqus_thread" class="disqus-thread"></div></div>
+                <!-- disqus comment end -->
+                {% endif %}
+            </div>
+
+            <!-- Side Catalog Container -->
+            {% if page.catalog %}
+                <div class="
+                    col-lg-2 col-lg-offset-0
+                    visible-lg-block
+                    sidebar-container
+                    catalog-container">
+                    <div class="side-catalog">
+                        <hr class="hidden-sm hidden-xs">
+                        <h5><a class="catalog-toggle" href="#">CATALOG</a></h5>
+                        <ul class="catalog-body"></ul>
+                    </div>
+                </div>
+            {% endif %}
+
+            <!-- Sidebar Container -->
+            <div class="
+                col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                sidebar-container">
+
+                <!-- Featured Tags -->
+                {% include featured-tags.html bottom=true %}
+
+                <!-- Friends Blog -->
+                {% include friends.html %}
+            </div>
+        </div>
+    </div>
+</article>
+
+<!-- add support for mathjax by voleking-->
+{% if page.mathjax %}{% include post/mathjax.html %}{% endif %}
+
+{% if site.disqus.enable %}{% include post/disqus.html %}{% endif %}
+
+{% if site.anchorjs %}{% include post/anchorjs.html %}{% endif %}

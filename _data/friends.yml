@@ -1,0 +1,6 @@
+- name: "知识库"
+  href: "https://knowledgebase.io"
+  enable: false
+- name: "快速入门"
+  href: "https://quickstarts.io"
+  enable: true

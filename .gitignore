@@ -1,0 +1,18 @@
+# MacOS
+.DS_Store
+*/.DS_Store
+*/*/.DS_Store
+
+# Editor
+.vscode
+
+# Jekyll
+.jekyll-metadata
+.jekyll-cache
+.bundle
+_site
+node_modules
+Gemfile.lock
+
+# package.json
+# package-lock.json

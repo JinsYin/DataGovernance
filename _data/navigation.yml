@@ -1,0 +1,12 @@
+- name: Home
+  link: / # note that `site.permalink`
+- name: Archive
+  link: /archive
+- name: About
+  link: /about
+- name: 知识库
+  href: https://knowledgebase.io
+  enable: false
+- name: 快速入门
+  href: https://quickstarts.io
+  enable: false

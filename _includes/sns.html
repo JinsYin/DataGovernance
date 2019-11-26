@@ -1,0 +1,17 @@
+{% comment %}
+  @param {Boolean} text-center
+{% endcomment %}
+
+<ul class="list-inline {%if include.text-center%}text-center{%endif%}">
+  {% assign SNS = site.data.sns | where: "enable", true %}
+  {% for sns in SNS %}
+  <li>
+  <a href="{% if sns.url %}{{sns.url | relative_url}}{% else %}{{sns.href}}{%endif%}" target="_blank">
+    <span class="fa-stack fa-lg">
+      <i class="fa fa-circle fa-stack-2x"></i>
+      <i class="fa fa-{{sns.name}} fa-stack-1x fa-inverse">{{sns.content}}</i>
+    </span>
+  </a>
+  </li>
+  {% endfor %}
+</ul>

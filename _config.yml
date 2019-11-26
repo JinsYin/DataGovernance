@@ -1,0 +1,125 @@
+# Site settings
+name: 微架构师
+title: 微架构师 | weplay.me
+description: "专注于计算机科学（CS）、云计算、云存储、云原生领域"
+keywords: "微架构师，云原生，云原生指南，Cloud Native，Cloud Native Handbook，Weplay，Weplay.me"
+url: "https://weplay.me" # your host, for absolute URL
+baseurl: "" # The defaults is empty, '/blog' if your blog hosted on 'host/blog'
+
+# pretty: `/:categories/:year/:month/:day/:title/`
+# 作用于 pages 和 collections，对于 pages，:title 等同于 :basename
+permalink: pretty
+
+# Collection Settings
+collections:
+  posts:
+    output: true
+    permalink: /:year/:month/:day/:title/ # override the global permalink
+
+# Front matter defaults
+defaults:
+  - scope:
+      path: "" # All pages and collections
+    values:
+      banner: "/assets/img/banner/post.jpeg" # default banner for pages and documents
+  - scope:
+      path: ""
+      type: posts # The "posts" collection => "_posts" directory
+    values:
+      layout: post
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: page # All pages
+
+# Publish posts or collection documents with a future date.
+future: true
+# If you have timezone issue (e.g. #68) in China, uncomment to use this:
+#timezone: CN
+
+# Paging settings
+paginate: 10
+paginate_path: "/page/:num/"
+
+# from 2016, 'pygments' is unsupported on GitHub Pages. Use 'rouge' for highlighting instead.
+highlighter: rouge
+
+# Markdown settings
+# replace redcarpet to kramdown,
+# although redcarpet can auto highlight code, the lack of header-id make the catalog impossible, so I switch to kramdown
+# document: http://jekyllrb.com/docs/configuration/#kramdown
+markdown: kramdown
+kramdown:
+  input: GFM # use Github Flavored Markdown !important
+  syntax_highlighter_opts:
+    span:
+      line_numbers: false
+    block:
+      line_numbers: true
+      start_line: 1
+
+exclude:
+  - assets/less
+  - node_modules
+  - Gruntfile.js
+  - package.json
+  - README.md
+
+# Gems
+# from PR#40, to support local preview for Jekyll 3.0
+# make sure you have this gem installed
+# `$ gem install jekyll-paginate`
+plugins:
+  - jekyll-paginate
+
+#=========================== more settings ===========================#
+
+# Site Language
+lang: "zh-cmn-Hans" # "zh-cmn-Hans" => 简体中文; "zh-cmn-Hant" => 繁体中文; "en" => English
+
+# Default banner for all pages
+banner: "assets/img/banner/post.jpeg"
+
+author:
+  name: jinsyin
+  email: jinsyin@gmail.com
+  github: https://github.com/jinsyin
+
+# Home page's sidebar settings
+sidebar:
+  enable: true # true => 右侧； false => 底部（不包含 Short About）
+  featured-tags:
+    enable: true # whether or not using Feature-Tags
+    condition-size: 1 # A tag will be featured if the size of it is more than this condition value
+  aboutme:
+    enable: true
+    avatar: /assets/img/avatar/wechat-mp.jpg # use absolute URL
+    description: "博学而笃志，切问而近思"
+    enable-sns: true
+  friends:
+    enable: false
+
+analytics:
+  google:
+    enable: false
+    track_id: "UA-111111-22"
+    domain: weplay.me
+    site-verification: ""
+  baidu:
+    enable: false
+    track_id: "xxxxxx"
+
+# Disqus settings
+disqus:
+  enable: false
+  username: jinsyin # or: weplay
+
+anchorjs: true # if you want to customize anchor. check out line:181 of `post.html`
+
+# MathJax rendering for layout:page (e.g. post preview)
+page-mathjax: false
+
+# Progressive Web Apps
+chrome-tab-theme-color: "#000000"
+service-worker: true

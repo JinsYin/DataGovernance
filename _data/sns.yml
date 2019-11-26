@@ -1,0 +1,23 @@
+# SNS settings
+- name: weibo
+  href: https://weibo.com/u/jinsyin
+  enable: false
+- name: github
+  href: https://github.com/jinsyin
+  enable: true
+- name: zhihu
+  href: https://www.zhihu.com/people/jinsyin
+  content: 知 # -_-
+  enable: false
+- name: twitter
+  href: https://twitter.com/jinsyin
+  enable: true
+- name: facebook
+  href: https://www.facebook.com/jinsyin
+  enable: false
+- name: linkedin
+  href: https://www.linkedin.com/in/%E4%BB%81%E5%BC%BA-%E5%B0%B9-79a31994
+  enable: true
+- name: rss
+  url: /feed.xml # -_-
+  enable: true

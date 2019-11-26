@@ -1,0 +1,7 @@
+<hr>
+<h5>FRIENDS</h5>
+<ul class="list-inline">
+{% for friend in site.data.friends %}
+    {% if friend.enable %}<li><a href="{{ friend.href }}" target="_blank">{{ friend.name }}</a></li>{% endif %}
+{% endfor %}
+</ul>
