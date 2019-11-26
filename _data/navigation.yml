@@ -1,9 +1,9 @@
 - name: Home
   link: / # note that `site.permalink`
 - name: Archive
-  link: /archive
+  link: /archive.html
 - name: About
-  link: /about
+  link: /about.html
 - name: 知识库
   href: https://knowledgebase.io
   enable: false

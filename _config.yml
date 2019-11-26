@@ -6,15 +6,8 @@ keywords: "微架构师，云原生，云原生指南，Cloud Native，Cloud Nat
 url: "https://weplay.me" # your host, for absolute URL
 baseurl: "" # The defaults is empty, '/blog' if your blog hosted on 'host/blog'
 
-# pretty: `/:categories/:year/:month/:day/:title/`
-# 作用于 pages 和 collections，对于 pages，:title 等同于 :basename
-permalink: pretty
-
-# Collection Settings
-collections:
-  posts:
-    output: true
-    permalink: /:year/:month/:day/:title/ # override the global permalink
+# 作用于 pages 和 collections；对于 pages，`:title` 等同于 `:basename`，而且会默认前置 `/:path/`
+permalink: pretty # => `/:categories/:year/:month/:day/:title/`
 
 # Front matter defaults
 defaults:
@@ -27,11 +20,13 @@ defaults:
       type: posts # The "posts" collection => "_posts" directory
     values:
       layout: post
+      permalink: /:year/:month/:day/:title.html # 优先级高于: `collections.posts.permalink`
   - scope:
       path: ""
-      type: pages
+      type: pages # All pages
     values:
-      layout: page # All pages
+      layout: page
+      permalink: /:path/:basename.html # defaults: `/:path/:basename/`
 
 # Publish posts or collection documents with a future date.
 future: true
