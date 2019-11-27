@@ -20,13 +20,13 @@ defaults:
       type: posts # The "posts" collection => "_posts" directory
     values:
       layout: post
-      permalink: /:year/:month/:day/:title.html # 优先级高于: `collections.posts.permalink`
+      permalink: /:year/:month/:day/:title:output_ext # 优先级高于: `collections.posts.permalink`
   - scope:
       path: ""
       type: pages # All pages
     values:
       layout: page
-      permalink: /:path/:basename.html # defaults: `/:path/:basename/`
+      permalink: /:path/:basename:output_ext # defaults: `/:path/:basename/` (output_ext: .md=>.html, .html=>.html, .x=>.x)
 
 # Publish posts or collection documents with a future date.
 future: true
