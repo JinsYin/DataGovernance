@@ -55,11 +55,17 @@ kramdown:
       start_line: 1
 
 exclude:
-  - assets/less
-  - node_modules
-  - Gruntfile.js
-  - package.json
+  - CNAME
+  - LICENSE
   - README.md
+  - CONTRIBUTING.md
+  - CODE_OF_CONDUCT.md
+  - assets/less
+  - Gruntfile.js
+  - node_modules
+  - package*.json
+  - Gemfile*
+  - vendor
 
 # Gems
 # from PR#40, to support local preview for Jekyll 3.0
