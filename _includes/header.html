@@ -67,7 +67,7 @@
     }
 </style>
 <header class="intro-header" >
-    <iframe src="{{page.iframe}}"></iframe>
+    {% if page.iframe %}<iframe src="{{ page.iframe }}"></iframe>{% endif %}
     <!-- keep for SEO -->
     <div class="container">
         <div class="row">

@@ -75,10 +75,10 @@
     async("{{ '/assets/js/jquery.tagcloud.js' | relative_url }}",function(){
         $.fn.tagcloud.defaults = {
             //size: {start: 1, end: 1, unit: 'em'},
-            color: {start: '#bbbbee', end: '#2f93b4'},
+            color: {start: '#bbbbee', end: '#2f93b4'}
         };
         $('#tag_cloud a').tagcloud();
-    })
+    });
 </script>
 <script src="{{ '/assets/js/archive.js' | relative_url }}"></script>
 {% endif %}
@@ -88,7 +88,7 @@
     async("//cdnjs.cloudflare.com/ajax/libs/fastclick/1.0.6/fastclick.min.js", function(){
         var $nav = document.querySelector("nav");
         if($nav) FastClick.attach($nav);
-    })
+    });
 </script>
 
 
@@ -134,10 +134,10 @@
     function generateCatalog (selector) {
 
         // interop with multilangual
-        if ('{{ page.multilingual }}' == 'true') {
-            _containerSelector = 'div.post-container.active'
+        if ('{{ page.multilingual }}' === 'true') {
+            _containerSelector = 'div.post-container.active';
         } else {
-            _containerSelector = 'div.post-container'
+            _containerSelector = 'div.post-container';
         }
 
         // init
@@ -145,7 +145,7 @@
         a = P.find('h1,h2,h3,h4,h5,h6');
 
         // clean
-        $(selector).html('')
+        $(selector).html('');
 
         // appending
         a.each(function () {
@@ -164,8 +164,8 @@
     // toggle side catalog
     $(".catalog-toggle").click((function(e){
         e.preventDefault();
-        $('.side-catalog').toggleClass("fold")
-    }))
+        $('.side-catalog').toggleClass("fold");
+    }));
 
     /*
      * Doc: https://github.com/davist11/jQuery-One-Page-Nav
@@ -179,7 +179,7 @@
             filter: "",
             scrollSpeed: 700,
             scrollOffset: 0,
-            scrollThreshold: .2,
+            scrollThreshold: 0.2,
             begin: null,
             end: null,
             scrollChange: null,
@@ -200,17 +200,17 @@
     var $select = document.querySelector("select");
 
     // Changes at v1.8.1: include lang flag as a url query. This interop well with catalog hash anchors.
-    function getLang() { return new URLSearchParams(document.location.search).get("lang") }
+    function getLang() { return new URLSearchParams(document.location.search).get("lang"); }
 
     function setLang(newLang) {
-        var params = new URLSearchParams(document.location.search)
-        params.set("lang", newLang)
-        document.location.search = params.toString()  // refresh.
+        var params = new URLSearchParams(document.location.search);
+        params.set("lang", newLang);
+        document.location.search = params.toString();  // refresh.
     }
 
     // handle render
     function _render(){
-        var lang = getLang()
+        var lang = getLang();
         // en
         if(lang == "en"){
             $select.selectedIndex = 1;
@@ -232,12 +232,12 @@
 
     // handle select change
     function onLanChange(index){
-        if(index == 0){
-            lang = "zh"
+        if(index === 0){
+            lang = "zh";
         }else{
-            lang = "en"
+            lang = "en";
         }
-        setLang(lang)
+        setLang(lang);
     }
 
     // init
