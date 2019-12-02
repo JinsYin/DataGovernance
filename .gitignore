@@ -10,9 +10,11 @@
 .jekyll-metadata
 .jekyll-cache
 .bundle
+.sass-cache
 _site
-node_modules
 Gemfile.lock
 
-# package.json
+# Frontend
+node_modules
 package-lock.json
+# package.json
