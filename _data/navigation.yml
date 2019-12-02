@@ -1,9 +1,15 @@
 - name: Home
   link: / # note that `site.permalink`
+  enable: true
 - name: Archive
   link: /archive.html
+  enable: true
+- name: Book
+  link: /book.html
+  enable: false
 - name: About
   link: /about.html
+  enable: true
 - name: 知识库
   href: https://knowledgebase.io
   enable: false
