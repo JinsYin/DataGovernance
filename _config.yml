@@ -97,7 +97,7 @@ sidebar:
     enable: true
     avatar: /assets/img/avatar/wechat-mp.jpg # use absolute URL
     description: "博学而笃志，切问而近思"
-    enable-sns: true
+    enable-socials: true
   friends:
     enable: false
 

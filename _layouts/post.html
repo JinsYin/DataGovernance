@@ -21,7 +21,7 @@ layout: default
                 post-container">
 
                 <!-- Multi-Lingual -->
-                {% if page.multilingual %}{% include lang.html %}{% endif %}
+                {% if page.multilingual %}{% include support/lang.html %}{% endif %}
 
 				{{ content }}
 
@@ -85,8 +85,8 @@ layout: default
 </article>
 
 <!-- add support for mathjax by voleking-->
-{% if page.mathjax %}{% include post/mathjax.html %}{% endif %}
+{% if page.mathjax %}{% include support/mathjax.html %}{% endif %}
 
-{% if site.disqus.enable %}{% include post/disqus.html %}{% endif %}
+{% if site.disqus.enable %}{% include support/disqus.html %}{% endif %}
 
-{% if site.anchorjs %}{% include post/anchorjs.html %}{% endif %}
+{% if site.anchorjs %}{% include support/anchorjs.html %}{% endif %}

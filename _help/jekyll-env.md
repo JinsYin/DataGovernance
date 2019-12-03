@@ -1,6 +1,6 @@
 ---
 ---
-# 环境差异
+# Jekyll 环境
 
 ## Permalink
 
