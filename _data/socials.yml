@@ -18,6 +18,6 @@
 - name: linkedin
   href: https://www.linkedin.com/in/%E4%BB%81%E5%BC%BA-%E5%B0%B9-79a31994
   enable: true
-- name: rss
+- name: feed
   url: /feed.xml # -_-
   enable: true

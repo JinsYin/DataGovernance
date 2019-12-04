@@ -67,12 +67,24 @@ exclude:
   - Gemfile*
   - vendor
 
-# Gems
-# from PR#40, to support local preview for Jekyll 3.0
-# make sure you have this gem installed
-# `$ gem install jekyll-paginate`
+# Gems, <https://pages.github.com/versions>
 plugins:
+  - jemoji # :+1:
+  - jekyll-feed # {% feed_meta %} and /feed.xml
   - jekyll-paginate
+  - jekyll-sitemap # /robots.txt and sitemap.xml
+  - jekyll-seo-tag # {% seo %}
+  - jekyll-redirect-from
+  - jekyll-relative-links
+
+#=========================== Plugins settings ===========================#
+
+# jekyll-sitemap plugin
+sitemap: true
+
+# jekyll-feed plugin
+feed:
+  path: feed.xml # It's the default
 
 #=========================== more settings ===========================#
 
