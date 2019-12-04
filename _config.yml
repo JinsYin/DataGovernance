@@ -20,7 +20,7 @@ defaults:
       type: posts # The "posts" collection => "_posts" directory
     values:
       layout: post
-      permalink: /:year/:month/:day/:title:output_ext # 优先级高于: `collections.posts.permalink`
+      permalink: /:year/:month/:title:output_ext # 优先级高于: `collections.posts.permalink`
   - scope:
       path: ""
       type: pages # All pages
