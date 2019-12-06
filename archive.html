@@ -21,7 +21,8 @@ https://github.com/kitian616/jekyll-TeXt-theme
 			<!-- Tags (as filter) -->
 			<div id="tag_cloud" class="tags tags-sup js-tags">
 				<a class="tag-button--all" data-encode="">
-					All<sup>{{site.posts.size}}</sup>
+					<span>All</span>
+					<sup>{{site.posts.size}}</sup>
 				</a>
 
 				{% capture tags %}
@@ -34,7 +35,8 @@ https://github.com/kitian616/jekyll-TeXt-theme
 				</a>__SEPARATOR__
 				{% endfor %}
 				{% endcapture %}
-				{{ tags | split:'__SEPARATOR__' | sort }}
+
+				{{ tags | strip | split: '__SEPARATOR__' | sort }}
 			</div>
 
 			<!-- Article List -->
