@@ -8,19 +8,13 @@ banner: "/assets/img/banner/home.jpg"
 {% for post in paginator.posts %}
 <div class="post-preview">
     <a href="{{ post.url | relative_url }}">
-        <h2 class="post-title">
-            {{ post.title }}
-        </h2>
-        {% if post.subtitle %}
-        <h3 class="post-subtitle">
-            {{ post.subtitle }}
-        </h3>
-        {% endif %}
+        <h2 class="post-title">{{ post.title }}</h2>
+        {% if post.subtitle %}<h3 class="post-subtitle">{{ post.subtitle }}</h3>{% endif %}
         <div class="post-content-preview">
             {% if post.lang == 'en' %}
-            {{ post.content | strip_html | truncate:300 }}
+                {{ post.content | strip_html | truncate:300 }}
             {% else %}
-            {{ post.content | strip_html | truncate:200 }}
+                {{ post.content | strip_html | truncate:200 }}
             {% endif %}
         </div>
     </a>
@@ -35,14 +29,10 @@ banner: "/assets/img/banner/home.jpg"
 {% if paginator.total_pages > 1 %}
 <ul class="pager">
     {% if paginator.previous_page %}
-    <li class="previous">
-        <a href="{{ paginator.previous_page_path | relative_url | replace: '//', '/' }}">&larr; Newer Posts</a>
-    </li>
+    <li class="previous"><a href="{{ paginator.previous_page_path | relative_url | replace: '//', '/' }}">&larr; 上一页</a></li>
     {% endif %}
     {% if paginator.next_page %}
-    <li class="next">
-        <a href="{{ paginator.next_page_path | relative_url | replace: '//', '/' }}">Older Posts &rarr;</a>
-    </li>
+    <li class="next"><a href="{{ paginator.next_page_path | relative_url | replace: '//', '/' }}">下一页 &rarr;</a></li>
     {% endif %}
 </ul>
 {% endif %}
