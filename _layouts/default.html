@@ -3,11 +3,11 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    {% comment %}<meta name="google-site-verification" content="" />{% endcomment %}
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <meta name="description" content="{{ site.description }}">
     <meta name="keywords"  content="{{ site.keywords }}">
     <meta name="theme-color" content="{{ site.chrome-tab-theme-color }}">
+    {% include site-verification.html %}
 
     <!-- Open Graph -->
     <meta property="og:title" content="{% if page.title %}{{ page.title }} - {{ site.title }}{% else %}{{ site.title }}{% endif %}">

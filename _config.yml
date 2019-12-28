@@ -123,6 +123,15 @@ analytics:
     enable: false
     track_id: "xxxxxx"
 
+# Site verification
+verification:
+  google: null
+  bing: "D614E69F82B9CF64B3EF4F8DF0E26432"
+  baidu: "5Rjv9HSAa8"
+  sogou: "DMkNnyycVE"
+  so: "9c2075914f6a2574f6462ac441664701" # 360 搜索
+  shenma: "e25a2659ef58e536e10166869b793e01_1577531111" # 神马
+
 # Disqus settings
 disqus:
   enable: false
