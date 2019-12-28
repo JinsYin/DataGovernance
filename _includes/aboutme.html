@@ -2,7 +2,7 @@
     <hr>
     <h5><a href="{% link about.md %}">ABOUT ME</a></h5>
     <div class="short-about">
-    {% if site.sidebar.aboutme.avatar %}<img src="{{ site.sidebar.aboutme.avatar | relative_url }}" />{% endif %}
+    {% if site.sidebar.aboutme.avatar %}<img src="{{ site.sidebar.aboutme.avatar | relative_url }}" alt="二维码"/>{% endif %}
     {% if site.sidebar.aboutme.description %}<p>{{ site.sidebar.aboutme.description }}</p>{% endif %}
     {% if site.sidebar.aboutme.enable-socials %}{% include socials.html %}{% endif %}
     </div>
