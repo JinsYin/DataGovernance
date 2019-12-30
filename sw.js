@@ -21,6 +21,9 @@ const PRECACHE_LIST = [
   "./assets/js/snackbar.js",
   "./assets/img/avatar/wechat-mp.jpg",
   "./assets/img/banner/home.jpg",
+  "./assets/img/banner/archive.jpg",
+  "./assets/img/banner/about.jpg",
+  "./assets/img/banner/post.jpeg",
   "./assets/img/banner/404.jpg",
   "./assets/css/weplay.min.css",
   "./assets/css/bootstrap.min.css"

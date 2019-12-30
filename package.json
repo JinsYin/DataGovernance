@@ -1,6 +1,6 @@
 {
-    "name": "微架构师",
-    "title": "微架构师",
+    "name": "knowledge-base",
+    "title": "knowledge-base",
     "author": "Jinsyin <jinsyin@gmail.com>",
     "version": "1.8.2",
     "homepage": "http://jinsyin.github.io",
@@ -17,7 +17,7 @@
         "grunt-contrib-uglify": "~0.5.1"
     },
     "scripts": {
-        "start": "jekyll serve -w -l --host 0.0.0.0 --port 4000",
+        "start": "bundle exec jekyll serve -w -l --host 0.0.0.0 --port 80",
         "dev": "grunt watch & npm run start",
         "boil": "git push boilerplate boilerplate:master",
         "push": "git push origin master --tag"
