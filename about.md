@@ -16,7 +16,7 @@ gender: 男
 address: 上海市虹口区
 education: 上海海事大学 · 学士学位
 profession: Open Source Contributor
-experience: 3年
+experience: 4年
 email: jinsyin@gmail.com
 sites:
   - name: GitHub
