@@ -1698,3 +1698,24 @@ img::-moz-selection {
 .intro-header .post-heading .meta a {
   color: #0085a1;
 }
+/* list START */
+.post-container > ul,
+.post-container > ol {
+  padding-left: 20px;
+}
+.post-container ul ul,
+.post-container ol ol {
+  padding-left: 18px;
+  margin: 2px 0;
+}
+.post-container ul li,
+.post-container ol li {
+  padding-top: 5px;
+}
+.post-container ol li {
+  padding-left: 5px;
+}
+.post-container ul li {
+  padding-left: 3px;
+}
+/* list END */
