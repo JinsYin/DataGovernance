@@ -1,5 +1,17 @@
 # CONTRIBUTING
 
+## 开发
+
+1. 安装 ruby、gem 及 nodejs、npm
+2. `gem install bundler`
+3. `bundle install`
+4. `npm install`
+5. `npm install -g grunt-cli`
+6. `npm run dev`
+7. `localhost:80`
+
+`package.json` 的 `name` 值（当前是 `weplay`）必须同 `assets/less/weplay.less` 和 `assets/js/weplay.js` 的文件名保持一致。修改这两个文件后，Grunt 会自动生成 `*.css`、`*.min.css`、`*.js` 和 `*.min.js` 等文件，详见 `Gruntfile.js`。
+
 ## Git 脚本
 
 使用 Git 管理代码和内容时，因为操作系统、编辑器和网络共享等原因，可能导致文件的权限前后不一、文件的内容不规范（比如文件末尾没有空白行），所以建议 `git add` 之前先执行以下脚本。
@@ -47,10 +59,13 @@ find . -type f -not -path .git -name ".DS_Store" -exec rm {} \;
 
 ### 我的 TAG
 
-* `云原生`
-* `工具`
-* `Kubernetes`
-* `读书`（CS）
+* 云原生
+* 工具
+* Kubernetes
+* 读书
+* CS
+* FS
+* Linux
 
 ### Permalink
 
