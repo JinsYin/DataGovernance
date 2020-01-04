@@ -139,9 +139,6 @@ disqus:
 
 anchorjs: true # if you want to customize anchor. check out line:181 of `post.html`
 
-# MathJax rendering for layout:page (e.g. post preview)
-page-mathjax: false
-
 # Progressive Web Apps
 chrome-tab-theme-color: "#000000"
 service-worker: true
