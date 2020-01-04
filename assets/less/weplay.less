@@ -220,6 +220,7 @@ samp {
   ul ol,
   ul ul {
     margin-bottom: 5px;
+    margin-top: 5px; // weplay
   }
   li {
     p {
@@ -452,25 +453,30 @@ samp {
       /* when the user scrolls down, we hide the header right above the viewport */
       position: fixed;
       top: -61px;
-      background-color: fade(white, 90%);
-      border-bottom: 1px solid darken(white, 5%);
+      // background-color: fade(white, 90%);    // weplay
+      // border-bottom: 1px solid darken(white, 5%); // weplay
+      background-color: rgba(35, 35, 35, 0.7); // weplay
       -webkit-transition: -webkit-transform 0.3s;
       -moz-transition: -moz-transform 0.3s;
       transition: transform 0.3s;
       .navbar-brand {
-        color: @gray-dark;
+        // color: @gray-dark; // weplay
+        color: white;       // weplay
         &:hover,
         &:focus {
-          color: @brand-primary;
+          // color: @brand-primary   // weplay
+          color: fade(white, 80%); // weplay
         }
       }
       .nav {
         li {
           a {
-            color: @gray-dark;
+            // color: @gray-dark; // weplay
+            color: white;       // weplay
             &:hover,
             &:focus {
-              color: @brand-primary;
+              // color: @brand-primary;  // weplay
+              color: fade(white, 80%); // weplay
             }
           }
         }
@@ -1188,4 +1194,14 @@ img::-moz-selection {
 .MathJax_SVG_Display{
   overflow: auto;
   -webkit-overflow-scrolling: touch;
+}
+
+/* Customize for weplay.me */
+
+.text-underline {
+  text-decoration: underline;
+}
+
+.intro-header .post-heading .meta a {
+  color: #0085a1;
 }
