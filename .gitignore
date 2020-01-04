@@ -12,9 +12,6 @@
 .bundle
 .sass-cache
 _site
-Gemfile.lock
 
 # Frontend
 node_modules
-package-lock.json
-# package.json
