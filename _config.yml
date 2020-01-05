@@ -108,7 +108,7 @@ sidebar:
   aboutme:
     enable: true
     avatar: /assets/img/avatar/wechat-mp.jpg # use absolute URL
-    description: "博学而笃志，切问而近思"
+    description: "发现问题、思考问题、解决问题"
     enable-socials: true
   friends:
     enable: false
