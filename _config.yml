@@ -111,7 +111,7 @@ sidebar:
     description: "发现问题、思考问题、解决问题"
     enable-socials: true
   friends:
-    enable: false
+    enable: true
 
 analytics:
   google:
