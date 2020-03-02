@@ -141,4 +141,4 @@ anchorjs: true # if you want to customize anchor. check out line:181 of `post.ht
 
 # Progressive Web Apps
 chrome-tab-theme-color: "#000000"
-service-worker: true
+service-worker: false
