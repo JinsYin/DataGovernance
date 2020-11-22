@@ -66,6 +66,7 @@ find . -type f -not -path .git -name ".DS_Store" -exec rm {} \;
 * CS
 * FS
 * Linux
+* Misc
 
 ### Permalink
 
