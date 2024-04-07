@@ -1,8 +1,8 @@
-# 微架构师 | [weplay.me](https://weplay.me)
+# 数据之道
 
-[![website][website-image]][website-href] [![Issues][issues-image]][issues-href]
+[![website][website-image]][website-href] 
 
-[website-image]: https://img.shields.io/website-up-down-green-red/https/weplay.me.svg
-[website-href]: https://weplay.me/
-[issues-image]: https://img.shields.io/github/issues/jinsyin/writing-template.svg
-[issues-href]: https://github.com/jinsyin/writing-template/issues/
+[website-image]: https://img.shields.io/website-up-down-green-red/https/datagov.cn.svg
+[website-href]: https://datagov.cn/
+
+公众号：「数据之道」，网站：[datagov.cn][website-href]
