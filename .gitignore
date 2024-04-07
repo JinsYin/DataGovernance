@@ -15,3 +15,6 @@ _site
 
 # Frontend
 node_modules
+
+# Intellij IDEA
+.idea/
