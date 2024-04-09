@@ -1,9 +1,9 @@
 # Site settings
-name: 微架构师
-title: 微架构师 | weplay.me
-description: "专注于计算机科学（CS）、云计算、云存储、云原生领域"
-keywords: "微架构师，云原生，云原生指南，Cloud Native，Cloud Native Handbook，Weplay，Weplay.me"
-url: "https://weplay.me" # your host, for absolute URL
+name: 数据之道
+title: 数据之道 | guruguru.cn
+description: "专注于数据技术，分享数据领域的技术实践，跟踪数据技术的发展趋势，解读数据相关的法律法规"
+keywords: "数据之道，数据技术，数据平台，数据治理，guruguru.cn"
+url: "https://guruguru.cn" # your host, for absolute URL
 baseurl: "" # The defaults is empty, '/blog' if your blog hosted on 'host/blog'
 
 # 作用于 pages 和 collections；对于 pages，`:title` 等同于 `:basename`，而且会默认前置 `/:path/`
@@ -117,7 +117,7 @@ analytics:
   google:
     enable: false
     track_id: "UA-111111-22"
-    domain: weplay.me
+    domain: guruguru.cn
     site-verification: ""
   baidu:
     enable: false
@@ -135,7 +135,7 @@ verification:
 # Disqus settings
 disqus:
   enable: false
-  username: jinsyin # or: weplay
+  username: jinsyin
 
 anchorjs: true # if you want to customize anchor. check out line:181 of `post.html`
 

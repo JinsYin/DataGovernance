@@ -17,7 +17,7 @@ const PRECACHE_LIST = [
   "./offline.html",
   "./assets/js/jquery.min.js",
   "./assets/js/bootstrap.min.js",
-  "./assets/js/weplay.min.js",
+  "./assets/js/datablog.min.js",
   "./assets/js/snackbar.js",
   "./assets/img/avatar/wechat-mp.jpg",
   "./assets/img/banner/home.jpg",
@@ -25,7 +25,7 @@ const PRECACHE_LIST = [
   "./assets/img/banner/about.jpg",
   "./assets/img/banner/post.jpeg",
   "./assets/img/banner/404.jpg",
-  "./assets/css/weplay.min.css",
+  "./assets/css/datablog.min.css",
   "./assets/css/bootstrap.min.css"
   // "//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css",
   // "//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/fonts/fontawesome-webfont.woff2?v=4.6.3",
@@ -33,7 +33,7 @@ const PRECACHE_LIST = [
 ]
 const HOSTNAME_WHITELIST = [
   self.location.hostname,
-  "weplay.me",
+  "guruguru.cn",
   "cdnjs.cloudflare.com"
 ]
 const DEPRECATED_CACHES = ['precache-v1', 'runtime', 'main-precache-v1', 'main-runtime']

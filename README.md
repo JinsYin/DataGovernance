@@ -2,7 +2,7 @@
 
 [![website][website-image]][website-href] 
 
-[website-image]: https://img.shields.io/website-up-down-green-red/https/datagov.cn.svg
-[website-href]: https://datagov.cn/
+[website-image]: https://img.shields.io/website-up-down-green-red/https/guruguru.cn.svg
+[website-href]: https://guruguru.cn/
 
-公众号：「数据之道」，网站：[datagov.cn][website-href]
+公众号：「数据之道」，网站：[guruguru.cn][website-href]

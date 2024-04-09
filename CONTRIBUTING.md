@@ -10,7 +10,7 @@
 6. `npm run dev`
 7. `localhost:80`
 
-`package.json` 的 `name` 值（当前是 `weplay`）必须同 `assets/less/weplay.less` 和 `assets/js/weplay.js` 的文件名保持一致。修改这两个文件后，Grunt 会自动生成 `*.css`、`*.min.css`、`*.js` 和 `*.min.js` 等文件，详见 `Gruntfile.js`。
+`package.json` 的 `name` 值（当前是 `datablog`）必须同 `assets/less/datablog.less` 和 `assets/js/datablog.js` 的文件名保持一致。修改这两个文件后，Grunt 会自动生成 `*.css`、`*.min.css`、`*.js` 和 `*.min.js` 等文件，详见 `Gruntfile.js`。
 
 ## Git 脚本
 

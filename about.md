@@ -7,22 +7,22 @@ multilingual: false
 permalink: /about.html
 ---
 
-> 天生我材必有用，千金散尽还复来
+> 业精于勤荒于嬉，行成于思毁于随
 
 ```yaml
 name: JinsYin
-age: 26
+age: 31
 gender: 男
-address: 上海市虹口区
-education: 上海海事大学 · 学士学位
+address: 上海
+education: ~
 profession: Open Source Contributor
-experience: 4年
-email: jinsyin@gmail.com
+experience: 8年
+email: jinsyin@163.com
 sites:
   - name: GitHub
     href: https://github.com/jinsyin
-  - name: 微架构师
-    href: https://weplay.me
+  - name: 数据之道
+    href: https://guruguru.cn
 skills: []
 devTools: []
 ```

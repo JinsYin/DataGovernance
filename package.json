@@ -1,15 +1,15 @@
 {
-    "name": "weplay",
-    "title": "微架构师",
-    "author": "Jinsyin <jinsyin@gmail.com>",
+    "name": "datablog",
+    "title": "数据之道",
+    "author": "Jinsyin <jinsyin@163.com>",
     "version": "1.8.2",
     "license": "Apache-2.0",
-    "homepage": "http://weplay.me",
+    "homepage": "https://guruguru.cn",
     "repository": {
         "type": "git",
-        "url": "https://github.com/jinsyin/jinsyin.github.io"
+        "url": "https://github.com/jinsyin/datablog"
     },
-    "bugs": "https://github.com/jinsyin/jinsyin.github.io/issues",
+    "bugs": "https://github.com/jinsyin/datablog/issues",
     "devDependencies": {
         "grunt": "^0.4.5",
         "grunt-banner": "~0.2.3",
